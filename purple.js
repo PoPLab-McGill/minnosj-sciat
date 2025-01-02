@@ -1,5 +1,4 @@
 define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qualtrics/qstiat10.js'], function(APIConstructor, stiatExtension) {
-
     var API = new APIConstructor();
     return stiatExtension({
         category: {
