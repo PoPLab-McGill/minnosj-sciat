@@ -3,59 +3,54 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-tasks@v1.0.0/stiat/
     var API = new APIConstructor();
 
     return stiatExtension({
-        // Category 1: Purple people
+        // Category 1: Autistics
         category1: {
-            name: 'Purple people', // Category name for the data
+            name: 'Autistics', // Category name for the data
             title: {
-                media: { word: 'Purple people' }, // Name shown in the task
+                media: { word: 'Autistics' }, // Name shown in the task
                 css: { color: '#31b404', 'font-size': '2em' }, // Styling for category title
                 height: 7 // Used to position the "Or" in the combined block
             },
             media: [ // Stimuli words for this category
-                { word: 'Group' },
-                { word: 'Community' },
-                { word: 'People' },
-                { word: 'Friends' },
-                { word: 'Neighbors' },
-                { word: 'Team' }
+                { word: 'Repeats body movements' },
+                { word: 'Avoids eye contact' },
+                { word: 'Dislikes unexpected changes' },
+                { word: 'Struggles making friends' },
+                { word: 'Repeats certain words' }
             ],
             css: { color: '#31b404', 'font-size': '3em' } // Styling for stimuli
         },
 
-        // Attribute 1: Unpleasant (Negative)
+        // Attribute 1: Negative
         attribute1: {
-            name: 'Unpleasant', // Attribute label for the data
+            name: 'Negative', // Attribute label for the data
             title: {
                 media: { word: 'Negative' }, // Label shown for this attribute
                 css: { color: '#31b404', 'font-size': '2em' }, // Styling for attribute title
                 height: 7 // Used to position the "Or" in the combined block
             },
             media: [ // Stimuli words for this attribute
-                { word: 'Bomb' },
-                { word: 'Abuse' },
-                { word: 'Sadness' },
-                { word: 'Pain' },
-                { word: 'Poison' },
-                { word: 'Grief' }
+                { word: 'Terrible' },
+                { word: 'Angry' },
+                { word: 'Hate' },
+                { word: 'Evil' }
             ],
             css: { color: '#31b404', 'font-size': '3em' } // Styling for stimuli
         },
 
-        // Attribute 2: Pleasant (Positive)
+        // Attribute 2: Positive
         attribute2: {
-            name: 'Pleasant', // Attribute label for the data
+            name: 'Positive', // Attribute label for the data
             title: {
                 media: { word: 'Positive' }, // Label shown for this attribute
                 css: { color: '#31b404', 'font-size': '2em' }, // Styling for attribute title
                 height: 7 // Used to position the "Or" in the combined block
             },
             media: [ // Stimuli words for this attribute
-                { word: 'Paradise' },
+                { word: 'Love' },
+                { word: 'Joy' }
                 { word: 'Pleasure' },
-                { word: 'Cheer' },
-                { word: 'Wonderful' },
-                { word: 'Splendid' },
-                { word: 'Love' }
+                { word: 'Peace' }
             ],
             css: { color: '#31b404', 'font-size': '3em' } // Styling for stimuli
         },
