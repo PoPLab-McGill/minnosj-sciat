@@ -58,8 +58,4 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
             // Can change color and size of the targets here.
             css: { color: '#31b404', 'font-size': '3em' }
         },
-
-        base_url: { // Removed as no images are used
-        }
-    });
-});
+    })
