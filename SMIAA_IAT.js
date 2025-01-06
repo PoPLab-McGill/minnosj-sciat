@@ -48,7 +48,7 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-tasks@v1.0.0/stiat/
             },
             media: [ // Stimuli words for this attribute
                 { word: 'Love' },
-                { word: 'Joy' }
+                { word: 'Joy' }, // <-- Corrected: Added missing comma
                 { word: 'Pleasure' },
                 { word: 'Peace' }
             ],
