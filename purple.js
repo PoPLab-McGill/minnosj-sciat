@@ -1,15 +1,17 @@
 define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qualtrics/qstiat10.js'], function(APIConstructor, stiatExtension) {
-    
+
     var API = new APIConstructor();
+
     return stiatExtension({
-        category: {
-            name: 'Purple people', // Will appear in the data.
+        // Category 1: Purple people
+        category1: {
+            name: 'Purple people', // Category name for the data
             title: {
-                media: { word: 'Purple people' }, // Name of the category presented in the task.
-                css: { color: '#31b404', 'font-size': '2em' }, // Style of the category title.
-                height: 7 // Used to position the "Or" in the combined block.
+                media: { word: 'Purple people' }, // Name shown in the task
+                css: { color: '#31b404', 'font-size': '2em' }, // Styling for category title
+                height: 7 // Used to position the "Or" in the combined block
             },
-            media: [ // Stimuli content as words
+            media: [ // Stimuli words for this category
                 { word: 'Group' },
                 { word: 'Community' },
                 { word: 'People' },
@@ -17,18 +19,18 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
                 { word: 'Neighbors' },
                 { word: 'Team' }
             ],
-            // Stimulus css (style)
-            css: { color: '#31b404', 'font-size': '3em' }
+            css: { color: '#31b404', 'font-size': '3em' } // Styling for stimuli
         },
 
+        // Attribute 1: Unpleasant (Negative)
         attribute1: {
-            name: 'Unpleasant', // Attribute label
+            name: 'Unpleasant', // Attribute label for the data
             title: {
-                media: { word: 'Negative' }, // Name of the category presented in the task.
-                css: { color: '#31b404', 'font-size': '2em' }, // Style of the category title.
-                height: 7 // Used to position the "Or" in the combined block.
+                media: { word: 'Negative' }, // Label shown for this attribute
+                css: { color: '#31b404', 'font-size': '2em' }, // Styling for attribute title
+                height: 7 // Used to position the "Or" in the combined block
             },
-            media: [ // Stimuli
+            media: [ // Stimuli words for this attribute
                 { word: 'Bomb' },
                 { word: 'Abuse' },
                 { word: 'Sadness' },
@@ -36,18 +38,18 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
                 { word: 'Poison' },
                 { word: 'Grief' }
             ],
-            // Can change color and size of the targets here.
-            css: { color: '#31b404', 'font-size': '3em' }
+            css: { color: '#31b404', 'font-size': '3em' } // Styling for stimuli
         },
 
+        // Attribute 2: Pleasant (Positive)
         attribute2: {
-            name: 'Pleasant', // Attribute label
+            name: 'Pleasant', // Attribute label for the data
             title: {
-                media: { word: 'Positive' }, // Name of the category presented in the task.
-                css: { color: '#31b404', 'font-size': '2em' }, // Style of the category title.
-                height: 7 // Used to position the "Or" in the combined block.
+                media: { word: 'Positive' }, // Label shown for this attribute
+                css: { color: '#31b404', 'font-size': '2em' }, // Styling for attribute title
+                height: 7 // Used to position the "Or" in the combined block
             },
-            media: [ // Stimuli
+            media: [ // Stimuli words for this attribute
                 { word: 'Paradise' },
                 { word: 'Pleasure' },
                 { word: 'Cheer' },
@@ -55,7 +57,9 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
                 { word: 'Splendid' },
                 { word: 'Love' }
             ],
-            // Can change color and size of the targets here.
-            css: { color: '#31b404', 'font-size': '3em' }
+            css: { color: '#31b404', 'font-size': '3em' } // Styling for stimuli
         },
+
     });
+
+});
