@@ -1,4 +1,4 @@
-define(['pipAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-tasks@v1.0.0/stiat/qualtrics/qstiat.js'], function(APIConstructor, stiatExtension) {
+define(['pipAPI', 'https://cdn.jsdelivr.net/gh/minnojs/minno-tasks@v0.3/stiat/qualtrics/qstiat.js'], function(APIConstructor, stiatExtension) {
 
     var API = new APIConstructor();
 
